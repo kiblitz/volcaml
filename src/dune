@@ -1,0 +1,6 @@
+(library
+ (name volcaml)
+ (public_name volcaml)
+ (libraries core)
+ (preprocess
+  (pps ppx_jane)))

@@ -1,0 +1,47 @@
+opam-version: "2.3.0"
+maintainer: "glee"
+authors: ["glee"]
+homepage: "https://github.com/kiblitz/volcaml"
+bug-reports: "https://github.com/kiblitz/volcaml/issues"
+dev-repo: "git+https://github.com/kiblitz/volcaml.git"
+doc: "https://github.com/kiblitz/volcaml"
+license: "MIT"
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+]
+depends: [
+  "ocaml" {>= "5.3.0"}
+  "base"
+  "base_bigstring"
+  "base_quickcheck"
+  "bin_prot"
+  "fieldslib"
+  "jane-street-headers"
+  "jst-config"
+  "parsexp"
+  "ppx_assert"
+  "ppx_base"
+  "ppx_diff"
+  "ppx_expect"
+  "ppx_hash"
+  "ppx_inline_test"
+  "ppx_jane"
+  "ppx_optcomp"
+  "ppx_sexp_conv"
+  "ppx_sexp_message"
+  "ppx_stable_witness"
+  "sexplib"
+  "splittable_random"
+  "stdio"
+  "time_now"
+  "typerep"
+  "univ_map"
+  "uopt"
+  "variantslib"
+  "dune"                {>= "3.18.1"}
+]
+available: arch != "arm32" & arch != "x86_32"
+synopsis: "Windows OCaml Vulkan bindings"
+description: "
+Basic bindings and set of tools for building applications powered by Vulkan
+"

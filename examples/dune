@@ -1,0 +1,5 @@
+(executable
+ (name volcaml_examples)
+ (libraries core volcaml)
+ (preprocess
+  (pps ppx_jane)))
